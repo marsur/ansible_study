@@ -1,0 +1,23 @@
+#bash script to check ansible hosts
+
+
+#!/bin/bash
+
+#script to check ansible hosts
+
+cd ~
+
+if test -e .ssh/config
+
+then 
+
+echo ic do marii >> /dev/null
+
+else
+
+echo StrictHostKeyChecking no >> .ssh/config
+
+fi
+
+ ansible all -m ping
+

@@ -1,0 +1,10 @@
+---
+- name: create volume group for /dev/sdb1
+  hosts: all
+  become: true
+  tasks:
+    - name: create volume group
+      lvg:
+          vg: data_vg
+          pvs: /dev/sdb1
+          pesize: 1024

@@ -1,0 +1,8 @@
+# playbook for migrating cron
+
+---
+- hosts: all
+
+  tasks:
+  - name: migrating cron
+    copy: src=/var/spool/cron/ dest=/var/spool/cron/  mode=600 owner=root group=   root

@@ -1,0 +1,12 @@
+---
+- name: we're createing 3 GB partition
+  hosts: all
+  become: true
+  tasks:
+    - name: create partition /dev/sdb1 
+      parted:
+        device: /dev/sdb
+        number: 1
+        flags: [ lvm ]
+        state: present
+        part_end: 3GB

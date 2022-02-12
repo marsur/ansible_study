@@ -1,0 +1,39 @@
+---
+
+
+
+- hosts: all
+
+
+
+  tasks:
+
+  - name: installig www server apache
+
+    yum:
+
+      name: httpd
+
+      update_cache: yes
+
+
+
+
+
+  - name: restart apache
+
+    service:
+
+      name: httpd
+
+      state: restarted
+
+
+
+# create a file to force apt-get to use IPv4 only
+
+  - copy:
+
+      content: "baca"
+
+      dest: "/var/www/html/1.txt"

@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+  - name : migrating /etc/hosts from template
+    copy: src=/etc/ansible/templates/db_servers_hosts dest=/etc/hosts mode=644 owner=root group=root
+
+
+#more info about this playbook: 

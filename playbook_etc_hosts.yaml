@@ -5,4 +5,4 @@
     copy: src=/etc/ansible/templates/db_servers_hosts dest=/etc/hosts mode=644 owner=root group=root
 
 
-#more info about this playbook: 
+#more info about this playbook: https://zapiskylinuxadmina.blogspot.com/2022/02/ansible-playbook-for-migrating-etchosts.html

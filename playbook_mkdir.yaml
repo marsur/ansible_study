@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+  - name : create directory /etc/ssh_keys directory
+    ansible.builtin.file:
+      path: /etc/ssh/keys
+      state: directory
+      mode: '0755'

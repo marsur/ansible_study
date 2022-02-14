@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+  - name : migrating ssh_keys for user root
+    copy: src=/mnt/ssh/root dest=/etc/ssh/keys/root mode=644 owner=root group=root

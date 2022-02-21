@@ -59,5 +59,5 @@ df -hT
 ansible-playbook /etc/ansible/playbooks/ssh_root.yaml
 
 
-#Seventh: go to beer and enjoy Linux life...
-~
+#Seventh: go to beer and enjoy Linux life...Janci? 
+

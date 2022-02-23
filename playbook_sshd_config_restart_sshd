@@ -1,0 +1,15 @@
+---
+-
+  hosts: all
+  tasks:
+    -
+      copy: "src=/etc/ansible/templates/sshd_config dest=/etc/ssh/sshd_config mode=600 owner=root group=root"
+      name: "migrating sshd_config"
+    -
+      name: "Stop and Start ssh"
+      service:
+        name: sshd
+        state: "{{ item }}"
+      with_items:
+        - stopped
+        - started

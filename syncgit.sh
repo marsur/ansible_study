@@ -2,7 +2,7 @@
 
 if test -d /root/ansible_study
 
-then echo good
+then echo directory exists
 
 else 
 

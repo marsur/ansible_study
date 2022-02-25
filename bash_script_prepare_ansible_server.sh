@@ -23,6 +23,8 @@ ssh-keygen -t rsa -b 4096 -C "Me"
 
 ls -l /root/.ssh/
 
+cat /root/.ssh/id_rsa.pub
+
 echo you can upload your public key to github
 
 echo go to a beer with Steffen

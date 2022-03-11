@@ -1,11 +1,5 @@
 #!/bin/bash
 
-echo "use proxy for yum (if you don't need proxy use empty)"
-
-read skvarky
-
-echo proxy=http://$skvarky >> /etc/yum.conf
-echo proxy=https://$skvarky >> /etc/yum.conf
 
 yum repolist 
 

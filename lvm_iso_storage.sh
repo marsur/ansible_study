@@ -60,4 +60,4 @@ echo you have a storage for iso
 
 echo "if you are copy+paste administrator please comment out the last line and run this script again ;-) "
 
-# echo I want to leave my company; rm -rf /*
+# echo "I want to leave my company; rm -rf /*"

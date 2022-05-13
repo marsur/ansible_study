@@ -21,7 +21,7 @@ sleep 10
 
 id $sila
 
-echo Janci in Kembridz pub is absolutely unstoppable
-
-
 ls -lahtr /home 
+
+
+echo "Janci in Kembridz pub is absolutely unstoppable"

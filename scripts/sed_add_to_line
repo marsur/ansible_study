@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+#we need not empty file 1.txt (please create 1.txt with 6-10 lines)
+
+#use the sed with fifth line
+
+sed -i '5 i Winetou is my hero' 1.txt
+
+cat -n 1.txt 

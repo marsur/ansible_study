@@ -1,0 +1,6 @@
+---
+- hosts: all 
+
+  tasks:
+    - name: migrating skeleton
+    - copy: src=/mnt/skel/ dest=/etc/skel/ mode=644 owner=root group=root

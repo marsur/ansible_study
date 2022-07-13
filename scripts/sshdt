@@ -12,7 +12,7 @@ if [ "$?" -eq "0" ]
 
 then 
 
-systemctl restart sshd
+systemctl restart sshd; systemctl status sshd
 
 else 
 

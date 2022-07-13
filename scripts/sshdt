@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#check sshd configuration (-t is test)
+sshd -t 
+
+
+# checking exit status...0 = everything is fine, eq - equal 
+
+# this condition: when everything is fine, sshd service will be restart and check the status
+# when everything is not fine, the system write what is in line 19 
+if [ "$?" -eq "0" ] 
+
+then 
+
+systemctl restart sshd
+
+else 
+
+echo "sshd configuration is broken.... do it something! Use magic!"
+
+fi 
+
+#I have to sign or sing
+echo "Fantomas was there..." 

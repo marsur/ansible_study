@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+
+  tasks:
+    - name: copying ssh keys via skel
+      copy: src=/etc/ansible/skel/ dest=/etc/skel mode=644 owner=root group=root
+
+
+# ja viem, uz som raz taky pisal 

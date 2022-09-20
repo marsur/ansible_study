@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+
+  tasks:
+    - name: copying customize yum conf
+      copy: src=/etc/ansible/templates/yum.conf dest=/etc/yum.conf mode=644 owner=root group=root
+
+
+# Please don't touch me... I will be not happy with leprosy...Thank you

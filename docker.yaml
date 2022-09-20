@@ -1,0 +1,22 @@
+---
+- hosts: all 
+
+  tasks: 
+    - name: install docker 
+
+      yum: 
+     
+        name: epel-release, docker
+ 
+        update_cache: yes
+
+
+    - name: start docker
+
+      service: 
+        name: docker 
+        state: started
+        enabled: yes
+
+      
+  

@@ -5,4 +5,4 @@
 
   tasks:
   - name: migrating cron
-    copy: src=/var/spool/cron/ dest=/var/spool/cron/  mode=600 owner=root group=   root
+    copy: src=/var/spool/cron/ dest=/var/spool/cron/  mode=600 owner=root group=root

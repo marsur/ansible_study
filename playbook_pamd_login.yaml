@@ -1,0 +1,7 @@
+---
+- hosts: all 
+
+  tasks: 
+
+    - name: copying secure pam.d login file
+      copy: src=/etc/ansible/files/login dest=/etc/pam.d mode=644 owner=root group=root

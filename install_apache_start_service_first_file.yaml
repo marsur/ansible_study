@@ -1,0 +1,30 @@
+---
+
+- hosts: all
+
+  tasks:
+
+  - name: Installing www server apache
+
+    yum:
+
+      name: httpd
+
+      update_cache: yes
+
+
+  - name: start apache
+
+    service:
+
+      name: httpd
+
+      state: started
+
+
+
+  - copy:
+
+      content: "prvy web"
+
+      dest: "/var/www/html/1.txt"

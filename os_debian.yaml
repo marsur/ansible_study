@@ -1,0 +1,7 @@
+---
+- hosts: all
+
+  tasks:
+    - name: "ukaz OS"
+      command: cat /etc/os-release
+      when: ansible_os_family == "Debian"

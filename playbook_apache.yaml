@@ -30,8 +30,6 @@
 
 
 
-# create a file to force apt-get to use IPv4 only
-
   - copy:
 
       content: "baca"

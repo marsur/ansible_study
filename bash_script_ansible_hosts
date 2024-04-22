@@ -11,7 +11,7 @@ if test -e .ssh/config
 
 then 
 
-echo ic do marii >> /dev/null
+echo no no >> /dev/null
 
 else
 
